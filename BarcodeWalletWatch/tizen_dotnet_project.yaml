@@ -1,0 +1,17 @@
+# csproj file path
+csproj_file: BarcodeWalletWatch.csproj
+
+# files monitored for dirty/modified status
+files:
+  - BarcodeWalletWatch.csproj
+  - BarcodeWalletWatch.cs
+  - App.xaml
+  - App.xaml.cs
+  - MainPage.xaml
+  - MainPage.xaml.cs
+  - tizen-manifest.xml
+  - shared/res/BarcodeWalletWatch.png
+  - Barcode.cs
+  - BarcodeDatabase.cs
+  - BarcodePage.xaml.cs
+  - Constants.cs

@@ -1,0 +1,18 @@
+﻿<resources>
+    <application name="Barcode Wallet">
+        <serviceProfile id="/me/abuena/barcodewallet/barcodes"
+                        name="BarcodeWallet"
+                        role="consumer"
+                        version="1.0">
+            <supportedTransports>
+                <transport type="TRANSPORT_BT"/>
+                <transport type="TRANSPORT_WIFI"/>
+            </supportedTransports>
+            <serviceChannel id="110"
+                            dataRate="low"
+                            priority="low"
+                            reliability="enable">
+            </serviceChannel>
+        </serviceProfile>
+    </application>
+</resources>

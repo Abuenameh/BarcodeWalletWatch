@@ -1,0 +1,26 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:w="clr-namespace:Tizen.Wearable.CircularUI.Forms;assembly=Tizen.Wearable.CircularUI.Forms"
+             xmlns:local="clr-namespace:me.abuena.barcodewalletwatch"
+             x:Class="me.abuena.barcodewalletwatch.MainPage"
+             NavigationPage.HasNavigationBar="False" x:DataType="local:MainPage">
+    <ContentPage.Content>
+        <w:CircleListView RowHeight="130"
+                          ItemsSource="{Binding Barcodes}"
+                          ItemTapped="BarcodeList_OnItemTapped">
+            <w:CircleListView.ItemTemplate>
+                <DataTemplate x:DataType="local:Barcode">
+                    <ViewCell>
+                        <Label Text="{Binding Name}"
+                               VerticalOptions="Center"
+                               HorizontalOptions="Center"
+                               VerticalTextAlignment="Center"
+                               HorizontalTextAlignment="Center" />
+                    </ViewCell>
+                </DataTemplate>
+            </w:CircleListView.ItemTemplate>
+        </w:CircleListView>
+    </ContentPage.Content>
+</ContentPage>
